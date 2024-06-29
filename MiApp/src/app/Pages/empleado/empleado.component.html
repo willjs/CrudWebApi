@@ -1,0 +1,41 @@
+<div class="mat-elevation-z2" style="width: 30%; padding: 30px; margin: 50px auto; display: flex;justify-content: center;">
+    <form [formGroup]="formEmpleado">
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Nombre Descripcion</mat-label>
+                <input matInput  formControlName="nombreDescripcion">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>direccion</mat-label>
+                <input matInput  formControlName="direccion">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>identificacion</mat-label>
+                <input matInput  formControlName="identificacion">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>Monda</mat-label>
+                <input matInput type="number"  formControlName="moneda">
+              </mat-form-field>
+        </div>
+        <div class="flex">
+            <mat-form-field>
+                <mat-label>FechaCreacion</mat-label>
+                <input matInput  formControlName="fechaCreacion">
+              </mat-form-field>
+        </div>
+
+        <div class="flex">
+            <button mat-flat-button color="primary" (click)="guardar()">Guardar</button>
+            <button mat-flat-button color="warn" (click)="volver()" style="margin-left: 8px;">Volver</button>
+        </div>
+
+    </form>
+
+</div>
